@@ -7,7 +7,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-export BLISS_BUILDTYPE=OFFICIAL
 
 # Foss / Microg
 #$(call inherit-product-if-exists, vendor/foss/foss.mk)
