@@ -7,8 +7,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+export BLISS_BUILDTYPE=OFFICIAL
 
-# foss / microg apps
+# Foss / Microg
 #$(call inherit-product-if-exists, vendor/foss/foss.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
@@ -17,7 +18,6 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 #TARGET_GAPPS_VARIANT := nano
 #TARGET_GAPPS_VARIANT := micro
 TARGET_GAPPS_VARIANT := full
-#TARGET_GAPPS_VARIANT := stock
 
 # MicroG
 #ifeq ($BLISS-BUILD-VARIANT), microg)@
